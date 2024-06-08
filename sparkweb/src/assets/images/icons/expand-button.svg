@@ -1,0 +1,7 @@
+<svg id="Expand_button" data-name="Expand button" xmlns="http://www.w3.org/2000/svg" width="38.946" height="38.95" viewBox="0 0 38.946 38.95">
+  <path id="Path" d="M0,0S7.333,7.539,7.537,7.539,15.073,0,15.073,0" transform="translate(11.9 16.229)" fill="none" stroke="#1a3b43" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.162"/>
+  <g id="Oval" transform="translate(0 0)" fill="none" stroke="#1a3b43" stroke-miterlimit="10" stroke-width="2.162">
+    <ellipse cx="19.473" cy="19.475" rx="19.473" ry="19.475" stroke="none"/>
+    <ellipse cx="19.473" cy="19.475" rx="18.392" ry="18.394" fill="none"/>
+  </g>
+</svg>

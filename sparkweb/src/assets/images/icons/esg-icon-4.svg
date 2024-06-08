@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168" height="168" viewBox="0 0 168 168">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#43a9ac" stop-opacity="0.412"/>
+      <stop offset="1" stop-color="#43a9ac" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_3776" data-name="Group 3776" transform="translate(-1389 -874)">
+    <circle id="Ellipse_161" data-name="Ellipse 161" cx="84" cy="84" r="84" transform="translate(1389 874)" opacity="0.673" fill="url(#radial-gradient)"/>
+    <g id="recycle" transform="translate(1424.5 918.9)">
+      <path id="Path_8132" data-name="Path 8132" d="M70.8,48.5l-6-10.3,13.8-8,7.1,12.3a10.356,10.356,0,0,1,0,10.5L78.6,65.3c-1.7,2.9-3.8,5.3-9.1,5.3H61.4v6.7L47,62.6,61.4,47.9v6.7H78.6c4.5,0,6-1.1,7.5-2.7" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_8133" data-name="Path 8133" d="M45.1,16.4l-6,10.3-13.8-8L32.4,6.4a10.523,10.523,0,0,1,9.1-5.3H55.7c3.4,0,6.5.7,9.1,5.3l4,7L74.6,10,69.1,29.8,49.2,24.6,55,21.2,46.4,6.3c-2.3-3.9-4-4.6-6.1-5.1" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_8134" data-name="Path 8134" d="M29.8,54.7H41.7V70.6H27.5a10.38,10.38,0,0,1-9.1-5.3L11.3,53c-1.7-2.9-2.7-6,0-10.5l4-7L9.5,32.1l19.9-5.2,5.5,19.8-5.8-3.4L20.5,58.2c-2.2,3.9-2,5.7-1.4,7.8" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

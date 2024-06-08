@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194" height="194" viewBox="0 0 194 194">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#43a9ac" stop-opacity="0.502"/>
+      <stop offset="1" stop-color="#43a9ac" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_3773" data-name="Group 3773" transform="translate(-1368 -2271)">
+    <circle id="Ellipse_170" data-name="Ellipse 170" cx="97" cy="97" r="97" transform="translate(1368 2271)" opacity="0.601" fill="url(#radial-gradient)"/>
+    <g id="oversight_icon" data-name="oversight icon" transform="translate(1423.9 2334.8)">
+      <g id="Group_3645" data-name="Group 3645" transform="translate(33.45 1.2)">
+        <path id="Path_7548" data-name="Path 7548" d="M29.1,17.617v-.809A5.967,5.967,0,0,1,35.108,10.8h3.813a5.967,5.967,0,0,1,6.008,6.008v.809" transform="translate(-29.1 0.291)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_7549" data-name="Path 7549" d="M32.1,5.475A4.265,4.265,0,0,0,36.375,9.75,4.341,4.341,0,0,0,40.65,5.475a4.275,4.275,0,0,0-8.55,0Z" transform="translate(-28.634 -1.2)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <path id="Path_7550" data-name="Path 7550" d="M63.163,56.209,51.032,19.7h-23.8L15.1,56.209v6.123H63.163Z" transform="translate(2.175 2.874)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7551" data-name="Path 7551" d="M16.12,44.419A8.221,8.221,0,0,0,9.534,41.3,8.481,8.481,0,0,0,1.1,49.734v4.737H13.693" transform="translate(0 6.23)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7552" data-name="Path 7552" d="M16.609,33.754a6.336,6.336,0,0,1-6.354,6.354,6.354,6.354,0,1,1,0-12.709A6.264,6.264,0,0,1,16.609,33.754Z" transform="translate(0.435 4.07)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7553" data-name="Path 7553" d="M16.8,29.1h3.119" transform="translate(2.439 4.334)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7554" data-name="Path 7554" d="M22.747,22.357a6.913,6.913,0,0,0-12.247,3" transform="translate(1.46 2.874)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7555" data-name="Path 7555" d="M23.367,13.684a5.054,5.054,0,0,1-5.084,5.084,5.084,5.084,0,1,1,5.084-5.084Z" transform="translate(1.88 1.15)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7556" data-name="Path 7556" d="M57.7,44.419A8.221,8.221,0,0,1,64.286,41.3a8.481,8.481,0,0,1,8.434,8.434v4.737H60.126" transform="translate(8.793 6.23)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7557" data-name="Path 7557" d="M56.9,33.754a6.336,6.336,0,0,0,6.354,6.354A6.354,6.354,0,1,0,56.9,33.754Z" transform="translate(8.669 4.07)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7558" data-name="Path 7558" d="M55.319,29.1H52.2" transform="translate(7.939 4.334)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7559" data-name="Path 7559" d="M50.6,22.357a6.913,6.913,0,0,1,12.247,3" transform="translate(7.69 2.874)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7560" data-name="Path 7560" d="M49.7,13.684a5.054,5.054,0,0,0,5.084,5.084A5.084,5.084,0,1,0,49.7,13.684Z" transform="translate(7.55 1.15)" fill="none" stroke="#0f1e41" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

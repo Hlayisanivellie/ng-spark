@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="94" viewBox="0 0 94 94">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#43a9ac" stop-opacity="0.412"/>
+      <stop offset="1" stop-color="#43a9ac" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_3777" data-name="Group 3777" transform="translate(-815 -1608)">
+    <circle id="Ellipse_173" data-name="Ellipse 173" cx="47" cy="47" r="47" transform="translate(815 1608)" opacity="0.996" fill="url(#radial-gradient)"/>
+    <g id="customer_icon" data-name="customer icon" transform="translate(826.2 1625.4)">
+      <path id="Path_8138" data-name="Path 8138" d="M.8,32.6,8.9,36,18,14.7,9.9,11.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_248" data-name="Line 248" transform="translate(6.3 30.6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8139" data-name="Path 8139" d="M71.7,28.3,64.2,33,51.8,13.3l7.5-4.7" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_249" data-name="Line 249" transform="translate(66 27.2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8140" data-name="Path 8140" d="M28.5,34.8c-3.2,2-7.3,4.5-7.3,4.5a3.191,3.191,0,0,1-3.4-5.4l16.5-10L38.6,26c2.3,3.8,5,4.3,6.9,4.1,1.5-.2,2.4-1.1,1.7-2.5-.7-1.3-2.5-4.7-3.3-6.3A3.25,3.25,0,0,0,42.6,20l-8.1-4.4a2.751,2.751,0,0,0-1.8-.2s-7.6,1.8-11.8,2.7H19.7a1.421,1.421,0,0,1-.6-.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8141" data-name="Path 8141" d="M21.8,41.4a2.112,2.112,0,0,0,.4,1,3.122,3.122,0,0,0,4.4,1s2.5-1.5,5.1-3.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8142" data-name="Path 8142" d="M27,45.6a3,3,0,0,0,4.1.8s2.4-1.5,4.9-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_250" data-name="Line 250" y1="2" x2="3.5" transform="translate(57.3 32.6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8143" data-name="Path 8143" d="M52.5,40.6a2.577,2.577,0,0,0,3.5.8h0a2.556,2.556,0,0,0,.8-3.5l-1.3-2.1A2.577,2.577,0,0,0,52,35h0a2.577,2.577,0,0,0-.8,3.5Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8144" data-name="Path 8144" d="M39.5,42.9a.758.758,0,0,0-.4.2,2.577,2.577,0,0,0-.8,3.5l1.3,2.1a2.577,2.577,0,0,0,3.5.8,2.651,2.651,0,0,0,.6-.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8145" data-name="Path 8145" d="M48.6,36.2a2.543,2.543,0,0,0-1.7.4,2.577,2.577,0,0,0-.8,3.5L48.6,44a2.577,2.577,0,0,0,3.5.8,3.46,3.46,0,0,0,1-1.1" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8146" data-name="Path 8146" d="M43.5,38.9a3.178,3.178,0,0,0-.9.3,2.577,2.577,0,0,0-.8,3.5l2.5,3.9a2.556,2.556,0,0,0,3.5.8,4.35,4.35,0,0,0,.7-.6" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8147" data-name="Path 8147" d="M36.7,48.2a3.908,3.908,0,0,1-.5.4,3.012,3.012,0,0,1-3.6-.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8148" data-name="Path 8148" d="M40.8,16.6l6.7,1.1a3.805,3.805,0,0,0,1.8-.3l1.8-.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_251" data-name="Line 251" x1="1.9" y1="1" transform="translate(12.5 34.2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

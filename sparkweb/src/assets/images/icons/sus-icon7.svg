@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="94" viewBox="0 0 94 94">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#43a9ac" stop-opacity="0.412"/>
+      <stop offset="1" stop-color="#43a9ac" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_3783" data-name="Group 3783" transform="translate(-893 -2007)">
+    <circle id="Ellipse_179" data-name="Ellipse 179" cx="47" cy="47" r="47" transform="translate(893 2007)" opacity="0.996" fill="url(#radial-gradient)"/>
+    <g id="transformation_icon" data-name="transformation icon" transform="translate(904.8 2025.699)">
+      <path id="Path_8180" data-name="Path 8180" d="M33.6,15.7v26a13,13,0,1,1,0-26Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8181" data-name="Path 8181" d="M20.6,28.7a12.974,12.974,0,0,0,13,13V56.1H29V51.3a23.266,23.266,0,0,1-8.1-3.4l-3.4,3.4L11,44.8l3.4-3.4A22.5,22.5,0,0,1,11,33.3H6.2V24.1H11A23.266,23.266,0,0,1,14.4,16L11,12.6l6.5-6.5,3.4,3.4A22.5,22.5,0,0,1,29,6.1V1.3h4.6V15.7a12.974,12.974,0,0,0-13,13Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="Group_3740" data-name="Group 3740">
+        <g id="Group_3737" data-name="Group 3737">
+          <rect id="Rectangle_2295" data-name="Rectangle 2295" width="5.5" height="5.5" transform="translate(48.3 7.9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2296" data-name="Rectangle 2296" width="5.5" height="5.5" transform="translate(48.3 20)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2297" data-name="Rectangle 2297" width="5.5" height="5.5" transform="translate(48.3 32.1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2298" data-name="Rectangle 2298" width="5.5" height="5.5" transform="translate(48.3 44.1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+        <g id="Group_3738" data-name="Group 3738">
+          <rect id="Rectangle_2299" data-name="Rectangle 2299" width="5.5" height="5.5" transform="translate(58.6 14)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2300" data-name="Rectangle 2300" width="5.5" height="5.5" transform="translate(58.6 26)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2301" data-name="Rectangle 2301" width="5.5" height="5.5" transform="translate(58.6 38.1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+        <g id="Group_3739" data-name="Group 3739">
+          <rect id="Rectangle_2302" data-name="Rectangle 2302" width="5.5" height="5.5" transform="translate(38 1.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2303" data-name="Rectangle 2303" width="5.5" height="5.5" transform="translate(38 13.7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2304" data-name="Rectangle 2304" width="5.5" height="5.5" transform="translate(38 26)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2305" data-name="Rectangle 2305" width="5.5" height="5.5" transform="translate(38 38.3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <rect id="Rectangle_2306" data-name="Rectangle 2306" width="5.5" height="5.5" transform="translate(38 50.6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
