@@ -955,8 +955,352 @@
             }
     
         }
+
+
+
+
+
+        .pop-up-const {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.393);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.pop-up-const .inner-holder {
+    position: relative;
+    max-width: 500px;
+    padding: 30px;
+    /* background-color: #fff; */
+    background-image: url(images/banners/results-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 10px; */
+    border: 2px solid #fff;
+}
+
+.pop-up-const .inner-holder::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+}
+
+.pop-up-const .inner-holder p {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.pop-up-const .inner-holder p.content {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.pop-up-const button {
+    border: none;
+    padding: 10px 30px;
+    background-color: #43A9AC;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.pop-up-const a {
+    color: #fff;
+}
+
+button.close {
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+.cont {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
     </style>
 
+<script>
+    let slideIndex = 0;
+    let autoSlideInterval;
+
+    function showSlides() {
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slide-dot');
+        slides.forEach((slide, index) => {
+            if (index === slideIndex) {
+                slide.style.display = 'block';
+                dots[index].classList.add('active');
+            } else {
+                slide.style.display = 'none';
+                dots[index].classList.remove('active');
+            }
+        });
+    }
+
+    function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+    }
+
+    function prevSlide() {
+        if (slideIndex > 0) {
+            slideIndex--;
+        } else {
+            slideIndex = document.querySelectorAll('.slide').length - 1;
+        }
+        showSlides();
+    }
+
+    function nextSlide() {
+        const slides = document.querySelectorAll('.slide');
+        if (slideIndex < slides.length - 1) {
+            slideIndex++;
+        } else {
+            slideIndex = 0;
+        }
+        showSlides();
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            if (slideIndex < document.querySelectorAll('.slide').length - 1) {
+                slideIndex++;
+            } else {
+                slideIndex = 0;
+            }
+            showSlides();
+        }, 30000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    showSlides();
+    startAutoSlide();
+</script>
+
+<script>
+    var numbers_values = document.querySelectorAll('.number .value.full');
+    var decimal_values = document.querySelectorAll('.number .value.decimal');
+    gsap.from(numbers_values, {
+        textContent: 0,
+        opacity: 0,
+        duration: 1,
+        ease: "power1.inOut",
+        snap: {
+            textContent: 1
+        },
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: numbers_values[0],
+            start: 'top 90%',
+        },
+    });
+
+    gsap.from(decimal_values, {
+        textContent: 0.0,
+        opacity: 0,
+        duration: 1,
+        ease: "power1.inOut",
+        snap: {
+            textContent: 0.23
+        },
+        scrollTrigger: {
+            trigger: numbers_values[0],
+            start: 'top 90%',
+        },
+    });
+</script>
+
+<style>
+.top-foot-bg {
+    background-color: #43A9AC;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.set-apart {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+a.controls {
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    color: #1F4650;
+    display: flex;
+    place-items: center;
+    font-family: "Manrope", sans-serif;
+}
+
+a.controls::before {
+    transition: all .3s ease-in-out;
+}
+
+a.controls::before {
+    font-family: 'icomoon';
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid #1F4650;
+    font-size: 14px;
+    font-weight: 900;
+    color: #1F4650;
+}
+
+a.controls.prev {
+    padding-left: 42px;
+}
+
+a.controls.next {
+    padding-right: 42px;
+}
+
+a.controls.prev:hover::before {
+    transform: translateX(-10px);
+}
+
+a.controls.next:hover::before {
+    transform: translateX(10px);
+}
+
+a.controls.prev::before {
+    left: 0;
+}
+
+a.controls.next::before {
+    right: 0;
+}
+
+a.controls i {
+    font-style: normal;
+}
+
+.bottom-foot-bg {
+    padding: 30px 0;
+    background-color: #0F1E41;
+}
+
+ul.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+
+}
+
+ul.policy-docs {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+}
+
+ul.footer-nav li a,
+ul.policy-docs li a {
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    transition: all .3s ease-in-out;
+}
+
+ul.footer-nav li a:hover,
+ul.policy-docs li a:hover {
+    color: #43A9AC;
+}
+
+
+.bottom-socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-socials p {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+@media screen and (max-width:1400px) {
+    .custom-breaks .col-lg-2 {
+        width: 100%;
+    }
+
+    .custom-breaks .col-lg-10 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .bottom-socials {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    ul.footer-nav {
+        margin-bottom: 0;
+    }
+
+    ul.footer-nav,
+    ul.policy-docs {
+        flex-direction: column;
+        border-bottom: none;
+        gap: 15px;
+    }
+
+    .bottom-socials {
+        justify-content: start;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    a.controls i {
+        display: none;
+    }
+}
+</style>
 
 
 
@@ -1009,3 +1353,606 @@
         <span class="icon-arrow-up"></span>
     </div>
 </div>
+
+
+<script>
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        // Code to execute when screen width is more than 991px
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var wintop = $(window).scrollTop(),
+                    docheight = $(document).height(),
+                    winheight = $(window).height();
+                var scrolltrigger = 0.95;
+
+                var percScrolled = parseInt((wintop / (docheight - winheight)) * 100);
+
+                $(".loader-span").css('width', percScrolled + "%");
+
+
+            });
+        })
+        // Add your logic here
+    } else {
+        // Code to execute when screen width is less than or equal to 991px
+        // console.log("Screen width is 991px or less");
+        // Add your logic here
+    }
+</script>
+
+
+
+
+
+<div class="slider" onmouseenter="stopAutoSlide()" onmouseleave="startAutoSlide()">
+    <div class="slides">
+        <div class="slide item-one">
+            <img src="./assets/images/banners/results-banner.png" alt="Image 1" class="image-slide-one">
+
+
+
+
+
+            <div class="homebanner-text slide-sizesbox">
+                <div class="container h-100">
+                    <div class="row align-items-center h-100">
+                        <div class="col-xl-5 col-lg-6 col-md-12">
+                            <h1 class="hero-title font-w-light wow fadeInUp ">
+                                Intro ipsum may<br /> be used as a<br /> placeholder
+                            </h1>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="slide item-two">
+            <img src="./assets/images/banners/results-banner2.png" alt="Image 2" class="image-slide-two">
+
+
+
+            <div class="homebanner-text slide-sizesbox">
+                <div class="container h-100">
+                    <div class="row align-items-center h-100">
+                        <div class="col-xl-5 col-lg-6 col-md-12">
+                            
+                                <div class="main-heading">
+                                    <h1 class="hero-title font-w-light wow fadeInUp ">
+                                Intro ipsum may<br /> be used as a<br /> placeholder
+                            </h1>
+
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-arrows">
+        <div class="slide-arrow" onClick="prevSlide()">&#10094;</div>
+        <div class="slide-arrow" onClick="nextSlide()">&#10095;</div>
+    </div>
+
+    <div class="slide-dots">
+        <span class="slide-dot" onClick="currentSlide(0)"></span>
+        <span class="slide-dot" onClick="currentSlide(1)"></span>
+    </div>
+</div>
+
+
+
+<div class="bg-grad-top">
+    <div class="container">
+        <div class="row justify-around mb-3 gx-5">
+            <div class="col-lg-6 col-md-12 align-self-center">
+                <p class="text-white  intro-small2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-12">
+            
+        <p class="text-white  intro-small2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="padding-60TB pb-0">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4">
+                <div class="home-block-immaged wow fadeInUp">
+                    <div class="home-block-immaged-img">
+
+                        <img src="./assets/images/home-grad-1.png" class="home-grad-1" alt="Electrical Engineering">
+
+                        <img src="./assets/images/home-img-1.png" class="home-block-immaged-img1" alt="Electrical Engineering">
+                        <div class="home-block-immaged-hero-content">H2 heading</div>
+                    </div>
+
+                    <div class="home-content-padboxed">
+                     
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div class="homeblocked-link-bottom">
+                        <a href="#" class="reunert-btn mb-0">Link here</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="home-block-immaged wow fadeInUp">
+                    <div class="home-block-immaged-img">
+
+                        <img src="./assets/images/home-grad-2.png" class="home-grad-1" alt="Information Communication
+Technologies (ICT)">
+
+                        <img src="./assets/images/home-img-2.png" class="home-block-immaged-img1" alt="Electrical Engineering">
+                        <div class="home-block-immaged-hero-content">H2 heading</div>
+                    </div>
+
+                    <div class="home-content-padboxed">
+                     
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div class="homeblocked-link-bottom">
+                        <a href="#" class="reunert-btn mb-0">Link here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="home-block-immaged wow fadeInUp">
+                    <div class="home-block-immaged-img">
+
+                        <img src="./assets/images/home-grad-3.png" class="home-grad-1" alt="Applied Electronics">
+
+                        <img src="./assets/images/home-img-3.png" class="home-block-immaged-img1" alt="Electrical Engineering">
+                        <div class="home-block-immaged-hero-content">H2 heading</div>
+                    </div>
+
+                    <div class="home-content-padboxed">
+                     
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div class="homeblocked-link-bottom">
+                        <a href="#" class="reunert-btn mb-0">Link here</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="bg-grad-top mt-5">
+    <div class="container">
+        <div class="row justify-around mb-3 gx-5">
+            <div class="col-lg-6 col-md-12 align-self-center">
+                <p class="text-white  intro-small2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-12">
+            
+        <p class="text-white  intro-small2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Main headings</h2>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="background-quick-links h-100 wow fadeInLeft">
+
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <h3 class="switch-dark-blue fw-800"><strong>Latest reports</strong></h3>
+                                </div>
+                                <div class="col-lg-5">
+
+                                    <a href="reporting-and-results.php" class="reunert-btn mb-0 mt-0 reunert-btn-results reunert-btn-results-right">Reports
+                                        archive</a>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="row mt-3">
+                                <div class="col-lg-12">
+                                    
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    
+
+
+                                    <a href="#" class="reunert-btn mb-0 mt-0 reunert-btn-results reunert-btn-results-right">Link here</a>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="background-quick-links h-100 wow fadeInRight">
+
+
+
+                            <div class="row mb-4">
+
+                                <div class="col-lg-12">
+
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    
+
+
+                                    <a href="#" class="reunert-btn mb-0 mt-0 reunert-btn-results reunert-btn-results-right">Link here</a>
+
+                                </div>
+
+                            </div>
+
+
+                      
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="our-purpose pt-5 mt-5 pb-5">
+    <div class="container ">
+
+
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <h2 class="mt-3 switch-dark-blue">Main heading</h2>
+
+            </div>
+
+            <div class="col-lg-5">
+
+
+           <p class="intro-med-home mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <a href="#" target="_blank" class="reunert-btn mb-0" style="float: right;">Link here</a>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <div class="bottom-foot-bg">
+
+        <div class="container">
+            <div class="row custom-breaks">
+                <div class="col-lg-2">
+                    <a href="index.php"><img src="./assets/images/logo1.png" class="mw-100 mb-3"
+                            alt="Logo footer"></a>
+                </div>
+                <div class="col-lg-10">
+
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+
+                    <div class="bottom-socials">
+                        <p class="mb-0">Copyright&nbsp;&copy;&nbsp;2024&nbsp;Spark Innovative Solutions. All rights reserved.</p>
+
+                        <!-- <ul class="policy-docs">
+                            <li><a href="sitemap.php">Sitemap</a></li>
+                            <li><a href="#" target="_blank">Privacy policy</a></li>
+                            <li><a href="#" target="_blank">Terms and conditions</a></li>
+                            <li><a href="code-of-ethics.php">Code of ethics </a></li>
+                            <li><a href="paia-manual.php">PAIA </a></li>
+                            <li><a href="disclaimer.php">Disclaimer </a></li>
+
+
+                        </ul>-->
+
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><img src="./assets/images/footer/facebook.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="./assets/images/footer/x.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="./assets/images/footer/youtube.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="./assets/images/footer/linkedIn.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="./assets/images/footer/instagram.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>    <script src="js/bootsrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() >= 200) {
+                $('.navbar').addClass('fixed-scroll');
+                popTop();
+            } else if ($(this).scrollTop() == 0) {
+                $('.navbar').removeClass('fixed-scroll');
+            }
+        });
+    })
+
+
+    function popTop() {
+
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() >= 200) {
+                $('.left-ani').css({
+                    "transform": "translateX(0)"
+                });
+
+            } else {
+                $('.left-ani').css({
+                    "transform": "translateX(130px)"
+                });
+            }
+        })
+    }
+
+    function gotop() {
+        $('.scroll-btn').click(function () {
+            $("body,html").animate({
+                scrollTop: 0
+            }, 600);
+        });
+    }
+
+
+    $(document).ready(function() {
+        gotop();
+    });
+</script>
+
+
+<script>
+    const links = document.querySelectorAll('.down-drop');
+
+    const linkContents = document.querySelectorAll('.nav-drop-down')
+    var currActive = '';
+    var mediaQuery = window.matchMedia('(max-width: 991px)');
+
+
+    // Check if the media query matches
+    if (mediaQuery.matches) {
+        // Mobile 
+
+        links.forEach((link, index) => {
+            //remove the hrefs
+            link.href = 'javascript:void(0)';
+            link.addEventListener('click', () => {
+                if (currActive != link.rel) {
+                    let dropdown = document.getElementById(link.rel);
+                    linkContents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    dropdown.classList.add('active');
+                    currActive = link.rel;
+                    dropdown.addEventListener('mouseleave', () => {
+                        dropdown.classList.remove('active');
+                        currActive = '';
+                    })
+
+                } else {
+                    linkContents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    currActive = '';
+                }
+
+            })
+        });
+    } else {
+        // Desktop
+        links.forEach((link, index) => {
+            link.addEventListener('mouseover', () => {
+                if (currActive != link.rel) {
+                    let dropdown = document.getElementById(link.rel);
+                    linkContents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    dropdown.classList.add('active');
+                    currActive = link.rel;
+                    dropdown.addEventListener('mouseleave', () => {
+                        dropdown.classList.remove('active');
+                        currActive = '';
+                    })
+
+                } else {
+                    linkContents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    currActive = '';
+                }
+            })
+        });
+    }
+
+    mediaQuery.addListener(function (mediaQueryList) {
+        if (mediaQueryList.matches) {
+            // Mobile 
+            links.forEach((link, index) => {
+                link.addEventListener('click', () => {
+                    if (currActive != link.rel) {
+                        let dropdown = document.getElementById(link.rel);
+                        linkContents.forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        dropdown.classList.add('active');
+                        currActive = link.rel;
+                        dropdown.addEventListener('mouseleave', () => {
+                            dropdown.classList.remove('active');
+                            currActive = '';
+                        })
+
+                    } else {
+                        linkContents.forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        currActive = '';
+                    }
+
+                })
+            });
+        } else {
+            // Desktop
+            links.forEach((link, index) => {
+                link.addEventListener('mouseover', () => {
+                    if (currActive != link.rel) {
+                        let dropdown = document.getElementById(link.rel);
+                        linkContents.forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        dropdown.classList.add('active');
+                        currActive = link.rel;
+                        dropdown.addEventListener('mouseleave', () => {
+                            dropdown.classList.remove('active');
+                            currActive = '';
+                        })
+
+                    } else {
+                        linkContents.forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        currActive = '';
+                    }
+                })
+            });
+        }
+    });
+
+    function resetDropdowns() {
+        linkContents.forEach(content => {
+            content.classList.remove('active');
+        });
+    }
+</script>
+
+    <script>
+        var showGuide = true;
+        var remember = false;
+
+        const pop_up = document.querySelector('.pop-up-const')
+
+        function initial() {
+            if (window.localStorage.getItem('construction') == null || window.localStorage.getItem('construction') == 'N') {
+                pop_up.style.display = "flex"
+                window.localStorage.setItem('construction', 'N')
+            } else {
+                pop_up.style.display = "none"
+                window.localStorage.setItem('construction', 'Y')
+
+            }
+        }
+
+        function rememberToggle() {
+            if (this.remember) {
+                this.remember = false
+            } else {
+                this.remember = true
+            }
+        }
+
+        function submitButton() {
+            if (this.remember) {
+                window.localStorage.setItem('construction', 'Y')
+                pop_up.style.display = "none"
+            } else {
+                window.localStorage.setItem('construction', 'N')
+                pop_up.style.display = "none"
+            }
+        }
+
+        initial()
+    </script>
+    <script>
+        new WOW().init();
+    </script>
